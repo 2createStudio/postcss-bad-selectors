@@ -1,0 +1,34 @@
+{
+	"name": "postcss-bad-selectors",
+	"version": "1.0.1",
+	"description": "Checks selectors according to the CSS standards of 2create.",
+	"main": "lib/index.js",
+	"keywords": [
+		"css",
+		"bad",
+		"selectors",
+		"postcss",
+		"postcss-plugin"
+	],
+	"author": {
+		"name": "2createStudio",
+		"url": "https://github.com/2createStudio"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/2createStudio/postcss-bad-selectors"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"postcss": "^4.1.10",
+		"lodash": "^3.9.3"
+	},
+	"devDependencies": {
+		"tape": "^4.0.0",
+		"tap-spec": "^3.0.0",
+		"postcss": "^4.1.10"
+	},
+	"scripts": {
+		"test": "node ./test/index.js | ./node_modules/.bin/tap-spec"
+	}
+}

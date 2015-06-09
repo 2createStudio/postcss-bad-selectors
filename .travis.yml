@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+- '0.12'
+sudo: false
+cache:
+  directories:
+  - node_modules
+notifications:
+  email: false
+before_deploy:
+- npm config set spin false --global
+env:
+  global:
+    secure: SAY/2AKNuQtKhGTGX8+wkJHOAOpTPK+/qBltaMtZjKXfH9hwUZi0/wCr5tpS6jpF/hFRryhNteDszGf7eSRo+46QGHjPUv1kBveOpOyQ+ReXNHSuA3ZHfY5pLp5pFnNx35CBrIEWTpqWub5ySToX2ZtG+O+QD15Hby2ri9LeqsyA/kulgQpNKoMTFnCpK/DVyzSjrTICTTSZKC/+nHKVzq1x+KRmVjEgIHZSu3+M7XYw5PTvVf7cz7Vzy8VY/x5cE+FT+j70GZZOpPJK55euuCAQ9d8jpJ4m6PniHz2Tn/CghXatWI0GTOFUX0nu8dod4xSh97YfpZ48NwfDh+wrWOINtx5W6o5XVKqD2x+XkijkYKgQGUPUVAom8eREpSPtJbQ12DpVFuoa+e+6M++gAX6uQaWGngj8Bdskk+8Y0B7Em6TVB9lzR8MELEuH1gF/+Gd9Q7W4PftHOFef4xbAdkEvBVcb3BzSmE/pDOgAH39jn25vbqOlJrFRYHLCJSmwlhOv0EU2zLpOJA1Wkuzt69oekc6NW/hmEn6dd3kT2QqmEBu0mv//inGpZM1XOVXtdR6r/yGz7xl1a6Iwbt1QE4X04QHM6CYKzdiHqM9eCHMkw/GDuczUIqs8vPsVdDYskxJX3cnOBrCUfyIx6nex7tZHUEv/IfglIuvwaCw4728=
+deploy:
+  provider: npm
+  email: bitbucket.2create@gmail.com
+  skip_cleanup: true
+  api_key:
+    secure: yqEcVHHfCG+1eCsENQDlhcYVcdf89VWY3yZKXQjPCx/aIICOKRWajiYzM+sayu19YDBsCkVwefroG5yomyizhCmWues7AEb4BN6E9zlQvS52Qy76vlyc6RpVpd9QTrXcSXUcePwD4vKFzHwuotWrFWlYqf7i9F4sG4B+Lo/BTGClgvhc9s+8tAg9wAyq27mGhL28waBlnfW7kkK0puSR+g/Qce6lbqQiRE1ZLjYHr3GeNmaNITCRLp2Y5+GurXOh9M/bLyNXSV4IDkWl0gNk9BlvinU7O/ZmdMBkdDJTesDLK9RoHTDQGrejiNK/jvgSzx5xXGn87z8nK2cCi99PD9uaRMzrBh5vb7umj5AaiFAdxYxI4T1kKDg+MzF4mbzhJ/tVRaahD1SjwxqR1KzT56mdom8YXtdeNfZIwXzWervYTAuKCZHcyeLZiOEdfgRCZpMZozP5jYM07mf8GB6hkHXzNH112uNLWNcMPp+GpeoYNYyFLWDTkpxOmFb9st9pEbOyaOCnYcAeXIfhFcZla/6+yeiQ/RdAFb4Oo23UUtn+UQfE5vZ1SEoKFCPPPPriGoV07bMEvXLxzC4JT+olzq1GB/9Psy6cKMa7nefOXJaSt9As3SWT5iirQVvmBucazleXzx2W8a5pMmjlTmUVqdUbYKW9KEe+OVCytyBmmyU=
+  on:
+    branch: master
+    repo: 2createStudio/postcss-bad-selectors
