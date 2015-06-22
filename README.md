@@ -32,9 +32,11 @@ function getToken(file) {
 		token = path.basename(token, '.css');
 	}
 
-	return token; // '_module.logo.css => .logo'
+	return token; // 'Valid CSS selector e.g. _module.logo.css => .logo'
 }
 ```
+
+**Note:** `getToken` can return `String` or `RegExp`.
 
 ## Input
 ```css
