@@ -1,6 +1,6 @@
 {
 	"name": "postcss-bad-selectors",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Checks selectors according to the CSS standards of 2create.",
 	"main": "lib/index.js",
 	"keywords": [
